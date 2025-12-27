@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* ========================================
+   TAILWIND THEME
+   ======================================== */
+
+@theme {
+  /* Terracotta Colors */
+  --color-terracotta-50: #fff5f2;
+  --color-terracotta-100: #ffe8e6;
+  --color-terracotta-200: #ffd6d1;
+  --color-terracotta-300: #ffb4ab;
+  --color-terracotta-400: #ff8375;
+  --color-terracotta-500: #f55645;
+  --color-terracotta-600: #e0392b;
+  --color-terracotta-700: #bd291e;
+  --color-terracotta-800: #9c251d;
+  --color-terracotta-900: #82241f;
+  
+  /* Cream & Stone Colors */
+  --color-cream: #F9F7F2;
+  --color-stone-850: #292524;
+  
+  /* Sage Colors */
+  --color-sage-100: #eaf4f0;
+  --color-sage-200: #cce3da;
+  --color-sage-300: #a3cbbd;
+  --color-sage-500: #6fa390;
+  
+  /* Font Families */
+  --font-family-serif: 'Crimson Text', serif;
+  --font-family-hand: 'Patrick Hand', cursive;
+  --font-family-sans: 'Lato', sans-serif;
+}
+
+/* ========================================
+   CUSTOM UTILITY CLASSES
+   ======================================== */
+
+/* Paper texture background */
+.bg-paper-texture {
+    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+}
+
+/* Hand/Script font utility */
+.font-hand {
+    font-family: var(--font-family-hand);
+}
+
+/* ========================================
+   CUSTOM SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F9F7F2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e0c8b8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4b09c;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-sans);
+    background-color: var(--color-cream);
+    color: var(--color-stone-850);
+}
+
+h1, h2, h3, .font-serif {
+    font-family: var(--font-family-serif);
+}
